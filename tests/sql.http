@@ -1,0 +1,12 @@
+@API = http://localhost:4444/api
+
+###
+GET {{API}}/
+
+###
+POST {{API}}/query
+Content-Type: application/json
+
+{
+    "query": "INSERT INTO usuario (nome, senha) VALUES ('NOME_TESTE', 'SENHA_TESTE')"
+}
